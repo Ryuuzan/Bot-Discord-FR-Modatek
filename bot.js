@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.delete(0)
         .then(msg => console.log(`Deleted message from ${msg.author.username}`))
         .catch(console.error);
-        message.reply('Bonjour ${msg.author.username}, veuillez respecter les règles de la communauté')
+        message.reply('Bonjour'+ ${msg.author.username}+', veuillez respecter les règles de la communauté')
   	}
 });
 
