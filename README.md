@@ -10,4 +10,4 @@ It's build with *Javascript*
 
 ## How can I summon him?
 Every angel needs a magic formula to be summoned, well for this one it's
-https://discordapp.com/oauth2/authorize?&client_id=451084897210204168&scope=bot&permissions=0
+https://discordapp.com/api/oauth2/authorize?client_id=451084897210204168&permissions=8&scope=bot
