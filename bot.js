@@ -9,8 +9,8 @@ client.on('message', message => {
     if (message.content === 'test') {
     	message.delete(0)
         .then(msg => console.log(`Deleted message from ${msg.author.username}`))
-        .catch(console.error)
-        .edit('Bonjour'+ ${msg.author.username}+', veuillez respecter les règles de la communauté');
+        .catch(console.error);
+        message.reply('Bonjour'+ ${msg.author.username}+', veuillez respecter les règles de la communauté');
   	}
 });
 
