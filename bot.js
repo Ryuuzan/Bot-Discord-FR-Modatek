@@ -17,7 +17,7 @@ client.on('message', message => {
 	{
 		if(res.length == 4)
 			{ 
-				if(res[2]==="bleu")
+				if(res[1]==="bleu")
 				{
 					message.channel.send({embed: {
   						color: 255,
