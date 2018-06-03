@@ -14,7 +14,8 @@ client.on('message', message => {
 	var res = message.content.split(" ");
 	//~say [couleur] [titre] [msg] 
 	if(res[0] === "~say")
-	{
+	{	
+		//Check for parameters
 		if(res.length == 4)
 			{ 
 				if(res[1]==="bleu")
@@ -22,16 +23,25 @@ client.on('message', message => {
 					message.channel.send({embed: {
   						color: 255,
   						title: res[2],
-  						description: "A very simple Embed!"
+  						description: res[3]
+					}});
+				}
+				if(res[1]==="blanc")
+				{
+					message.channel.send({embed: {
+  						color: 16777215,
+  						title: res[2],
+  						description: res[3]
 					}});
 				}
 			}
+			//Default
 			else
 			{
 				message.channel.send({embed: {
   					color: 16777215,
-  					title: res[2],
-  					description: "A very simple Embed!"
+  					title: res[1],
+  					description: res[2]
 				}});
 			}
 	}
