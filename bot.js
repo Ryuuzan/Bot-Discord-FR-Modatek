@@ -21,7 +21,7 @@ client.on('message', message => {
 				{
 					message.channel.send({embed: {
   						color: 255,
-  						title: res[2]
+  						title: res[2],
   						description: "A very simple Embed!"
 					}});
 				}
@@ -30,7 +30,7 @@ client.on('message', message => {
 			{
 				message.channel.send({embed: {
   					color: 16777215,
-  					title: res[2]
+  					title: res[2],
   					description: "A very simple Embed!"
 				}});
 			}
